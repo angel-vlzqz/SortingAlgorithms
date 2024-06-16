@@ -1,3 +1,5 @@
+import time
+from numpy.random import seed, randint
 from src.bubblesort import bubbleSort
 from src.heapsort import heapSort
 from src.insertionsort import insertionSort
@@ -7,37 +9,52 @@ from src.radixsort import radixSort
 from src.selectionsort import selectionSort
 
 if __name__ == "__main__":
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    seed(42069)
+    testArr = randint(0, 4096, 4096)
+    bubbleST = time.time()
     bubbleSort(testArr)
-    print("bubble sort: ")
+    bubbleET = time.time()
+    print("bubble sort time: ", bubbleET - bubbleST)
     print(testArr)
 
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    testArr = randint(0, 4096, 4096)
+    heapST = time.time()
     heapSort(testArr)
-    print("heap sort: ")
+    heapET = time.time()
+    print("heap sort time: ", heapET - heapST)
     print(testArr)
 
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    testArr = randint(0, 4096, 4096)
+    insertionST = time.time()
     insertionSort(testArr)
-    print("insertion sort: ")
+    insertionET = time.time()
+    print("insertion sort time: ", insertionET - insertionST)
     print(testArr)
 
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    testArr = randint(0, 4096, 4096)
+    mergeST = time.time()
     mergeSort(testArr, 0, len(testArr) - 1)
-    print("merge sort: ")
+    mergeET = time.time()
+    print("merge sort time: ", mergeET - mergeST)
     print(testArr)
 
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    testArr = randint(0, 4096, 4096)
+    quickST = time.time()
     quickSort(testArr, 0, len(testArr) - 1)
-    print("quick sort: ")
+    quickET = time.time()
+    print("quick sort time: ", quickET - quickST)
     print(testArr)
 
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    testArr = randint(0, 4096, 4096)
+    radixST = time.time()
     radixSort(testArr)
-    print("radix sort: ")
+    radixET = time.time()
+    print("radix sort time: ", radixET - radixST)
     print(testArr)
 
-    testArr = [3, 2, 1, 4, 5, 2, 1, 233, 123, 432, 123]
+    testArr = randint(0, 4096, 4096)
+    selectionST = time.time()
     selectionSort(testArr, len(testArr))
-    print("selection sort: ")
+    selectionET = time.time()
+    print("selection sort time: ", selectionET - selectionST)
     print(testArr)
