@@ -44,10 +44,10 @@ def heapSort(arr):
 
 # Driver's code
 
-arr = [12, 11, 13, 5, 6, 7]
-# Function call
-heapSort(arr)
-N = len(arr)
-print("heap sort: ")
-for i in range(N):
-    print("%d" % arr[i], end=" ")
+#arr = [12, 11, 13, 5, 6, 7]
+## Function call
+#heapSort(arr)
+#N = len(arr)
+#print("heap sort: ")
+#for i in range(N):
+#    print("%d" % arr[i], end=" ")

@@ -19,8 +19,8 @@ def insertionSort(arr):
 
 
 # Driver code to test above
-arr = [12, 11, 13, 5, 6]
-insertionSort(arr)
-print("insertion sort: ")
-for i in range(len(arr)):
-    print("% d" % arr[i], end=" ")
+#arr = [12, 11, 13, 5, 6]
+#insertionSort(arr)
+#print("insertion sort: ")
+#for i in range(len(arr)):
+#    print("% d" % arr[i], end=" ")

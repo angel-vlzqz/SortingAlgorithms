@@ -60,8 +60,8 @@ def printArray(array, size):
 
 # Driver code
 
-arr = [12, 11, 13, 5, 6, 7]
-arr_size = len(arr)
-mergeSort(arr, 0, arr_size - 1)
-print("merge sort: ")
-printArray(arr, arr_size)
+#arr = [12, 11, 13, 5, 6, 7]
+#arr_size = len(arr)
+#mergeSort(arr, 0, arr_size - 1)
+#print("merge sort: ")
+#printArray(arr, arr_size)

@@ -13,8 +13,8 @@ def selectionSort(array, size):
          # swapping the elements to sort the array
         (array[ind], array[min_index]) = (array[min_index], array[ind])
 
-arr = [-2, 45, 0, 11, -9,88,-97,-202,747]
-size = len(arr)
-selectionSort(arr, size)
-print('selection sort:')
-print(arr)
+#arr = [-2, 45, 0, 11, -9,88,-97,-202,747]
+#size = len(arr)
+#selectionSort(arr, size)
+#print('selection sort:')
+#print(arr)

@@ -31,7 +31,7 @@ def partition(array, low, high):
 
 
 # Function to perform quicksort
-def quicksort(array, low, high):
+def quickSort(array, low, high):
     if low < high:
 
         # Find pivot element such that
@@ -40,19 +40,19 @@ def quicksort(array, low, high):
         pi = partition(array, low, high)
 
         # Recursive call on the left of pivot
-        quicksort(array, low, pi - 1)
+        quickSort(array, low, pi - 1)
 
         # Recursive call on the right of pivot
-        quicksort(array, pi + 1, high)
+        quickSort(array, pi + 1, high)
 
 
 # Driver code
 
-array = [10, 7, 8, 9, 1, 5]
-N = len(array)
-# Function call
-quicksort(array, 0, N - 1)
-print('quick sort:')
-for x in array:
-    print(x, end=" ")
+#array = [10, 7, 8, 9, 1, 5]
+#N = len(array)
+## Function call
+#quicksort(array, 0, N - 1)
+#print('quick sort:')
+#for x in array:
+#    print(x, end=" ")
 
