@@ -8,53 +8,71 @@ from src.quicksort import quickSort
 from src.radixsort import radixSort
 from src.selectionsort import selectionSort
 
+def time_rank(time1, time2, time3, time4, time5, time6, time7):
+    arr = [time1, time2, time3, time4, time5, time6, time7]
+    print(sorted(arr, key = lambda x:float(x)))
+    sorts = {}
+    for i in range(7):
+        sorts[i] = time1
+    print(sorts[i])
+
 if __name__ == "__main__":
     seed(42069)
     testArr = randint(0, 4096, 4096)
     bubbleST = time.time()
     bubbleSort(testArr)
     bubbleET = time.time()
-    print("bubble sort time: ", bubbleET - bubbleST)
-    print(testArr)
+    bubbleTime = bubbleET - bubbleST
+    print("bubble sort time: ", bubbleTime)
+    #print(testArr)
 
     testArr = randint(0, 4096, 4096)
     heapST = time.time()
     heapSort(testArr)
     heapET = time.time()
-    print("heap sort time: ", heapET - heapST)
-    print(testArr)
+    heapTime = heapET - heapST
+    print("heap sort time: ", heapTime)
+    #print(testArr)
 
     testArr = randint(0, 4096, 4096)
     insertionST = time.time()
     insertionSort(testArr)
     insertionET = time.time()
-    print("insertion sort time: ", insertionET - insertionST)
-    print(testArr)
+    insertionTime = insertionET - insertionST
+    print("insertion sort time: ",insertionTime)
+    #print(testArr)
 
     testArr = randint(0, 4096, 4096)
     mergeST = time.time()
     mergeSort(testArr, 0, len(testArr) - 1)
     mergeET = time.time()
-    print("merge sort time: ", mergeET - mergeST)
-    print(testArr)
+    mergeTime = mergeET - mergeST
+    print("merge sort time: ", mergeTime)
+    #print(testArr)
 
     testArr = randint(0, 4096, 4096)
     quickST = time.time()
     quickSort(testArr, 0, len(testArr) - 1)
     quickET = time.time()
-    print("quick sort time: ", quickET - quickST)
-    print(testArr)
+    quickTime = quickET - quickST
+    print("quick sort time: ", quickTime)
+    #print(testArr)
 
     testArr = randint(0, 4096, 4096)
     radixST = time.time()
     radixSort(testArr)
     radixET = time.time()
-    print("radix sort time: ", radixET - radixST)
-    print(testArr)
+    radixTime = radixET - radixST
+    print("radix sort time: ",radixTime)
+    #print(testArr)
 
     testArr = randint(0, 4096, 4096)
     selectionST = time.time()
     selectionSort(testArr, len(testArr))
     selectionET = time.time()
-    print("selection sort time: ", selectionET - selectionST)
-    print(testArr)
+    selectionTime = selectionET - selectionST
+    print("selection sort time: ", selectionTime)
+    #print(testArr)
+
+    time_rank(bubbleTime, heapTime, insertionTime, mergeTime, quickTime, radixTime, selectionTime)
+
